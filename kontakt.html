@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kontakt do Aleksandra Gierymskiego">
+  <meta name="keywords" content="kontakt, Aleksander Gierymski, dane kontaktowe">
+  <meta name="author" content="Twoje Imię">
+  <title>Kontakt - Aleksander Gierymski</title>
+  <link rel="icon" href="img/ikona.ico" type="image/x-icon">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    footer {
+      background-color: #f8f9fa;
+      padding: 20px 0;
+      text-align: center;
+      margin-top: auto; /* Zapewnia, że stopka jest zawsze na dole */
+      width: 100%;
+    }
+
+    .contact-info {
+      background-color: #f1f1f1;
+      padding: 20px;
+      border-radius: 5px;
+      margin-bottom: 30px;
+    }
+
+    /* Responsywność dla urządzeń mobilnych */
+    @media (max-width: 767px) {
+      .contact-info {
+        margin-bottom: 20px;
+      }
+
+      .container {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+
+      .navbar-brand img {
+        width: 25px;
+        height: 25px; /* Zmniejszenie ikony na urządzeniach mobilnych */
+      }
+
+      .navbar-nav {
+        text-align: center;
+      }
+
+      .navbar-toggler {
+        border-color: #007bff;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Nawigacja -->
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">
+      <img src="img/ikona.ico" width="30" height="30" class="d-inline-block align-top" alt=""> Gierymski
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu"
+      aria-controls="navbarMenu" aria-expanded="false" aria-label="Przełącz nawigację">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarMenu">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Strona główna</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="omnie.html">O mnie</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="portfoli.html">Portfolio</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="kontakt.html">Kontakt</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Treść strony -->
+  <div class="container my-5">
+    <div class="row">
+      <!-- Informacje kontaktowe -->
+      <div class="col-md-6">
+        <div class="contact-info">
+          <h2>Dane kontaktowe</h2>
+          <p><strong>Adres:</strong> ul. Strzegomska 55, 69-420, Wrocław</p>
+          <p><strong>Telefon:</strong> +48 420 420 420</p>
+          <p><strong>Email:</strong> dsw52779@student.dsw.edu.pl</p>
+          <p><strong>Godziny otwarcia:</strong> 24/7, 365 dni w roku</p>
+        </div>
+      </div>
+
+      <!-- Formularz kontaktowy -->
+      <div class="col-md-6">
+        <h2>Formularz kontaktowy</h2>
+        <form action="#" method="post">
+          <div class="form-group">
+            <label for="imie">Imię</label>
+            <input type="text" class="form-control" id="imie" name="imie" required>
+          </div>
+          <div class="form-group">
+            <label for="nazwisko">Nazwisko</label>
+            <input type="text" class="form-control" id="nazwisko" name="nazwisko" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Adres e-mail</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="tresc">Treść wiadomości (max 300 znaków)</label>
+            <textarea class="form-control" id="tresc" name="tresc" rows="5" maxlength="300" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Wyślij wiadomość</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stopka -->
+  <footer>
+    <div class="container">
+      <p>Łukasz Rosiński DSW52779, prawa autorskie zastrzeżone &copy; 2025.</p>
+    </div>
+  </footer>
+
+  <!-- Skrypty Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio Aleksandra Gierymskiego - artysty i malarza">
+  <meta name="keywords" content="Aleksander Gierymski, artysta, portfolio, galeria, kontakt">
+  <meta name="author" content="Łukasz Rosiński">
+  <title>Aleksander Gierymski - Strona główna</title>
+  <link rel="icon" href="img/ikona.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+    html, body {
+      height: auto;
+      min-height: 100%;
+    }
+
+    /* Kontener na stronie */
+    .container {
+      flex: 1;
+    }
+
+    .containermy-51 {
+      margin-top: 5%;
+      text-align: center;
+    }
+
+    /* Banner */
+    .banner {
+      background: url('https://via.placeholder.com/1920x500') no-repeat center center;
+      background-size: cover;
+      color: white;
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    /* Przycisk */
+    .btn-primary:hover {
+      background-color: #0056b3;
+      transform: scale(1.05);
+      transition: 0.3s;
+    }
+
+    /* Linki w nawigacji */
+    .nav-link:hover {
+      color: #007bff;
+    }
+
+    /* Stopka */
+    footer {
+      background-color: #f8f9fa;
+      padding: 20px 0;
+      text-align: center;
+      position: relative;
+      width: 100%;
+    }
+
+    /* Dostosowanie do mniejszych ekranów */
+    @media (max-width: 767px) {
+      .banner h1 {
+        font-size: 2rem; /* Mniejsza czcionka na mobilnych */
+      }
+      .banner p {
+        font-size: 1rem; /* Mniejsza czcionka na mobilnych */
+      }
+      .container {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Nawigacja -->
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">
+      <img src="img/ikona.ico" width="30" height="30" class="d-inline-block align-top" alt=""> Gierymski
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarMenu">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active"><a class="nav-link" href="index.html">Strona główna</a></li>
+        <li class="nav-item"><a class="nav-link" href="omnie.html">O mnie</a></li>
+        <li class="nav-item"><a class="nav-link" href="portfoli.html">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="containermy-51">
+    <h2>Witamy na stronie poświęconej Aleksandrowi Gierymskiemu</h2>
+  </div>
+
+  <!-- Opis Artysty -->
+  <div class="container my-5">
+    <h2>Kim był Aleksander Gierymski?</h2>
+    <p>Sztuka Aleksandra Gierymskiego to niezwykłe połączenie realizmu i wrażliwości na detale, które do dziś inspirują miłośników malarstwa. Ta strona powstała, aby przybliżyć jego twórczość, zaprezentować najważniejsze dzieła i opowiedzieć historię artysty, który mimo trudności życiowych, pozostawił po sobie niezwykłe arcydzieła. Jego obrazy ukazują codzienne życie ludzi, grę światła i barw, a także unikalny sposób patrzenia na rzeczywistość.</p>
+    <p>Naszym celem jest nie tylko przedstawienie biografii Gierymskiego, ale również zaproszenie do głębszego poznania jego twórczości. Galeria zawiera wybór jego najważniejszych obrazów, które do dziś zachwycają zarówno krytyków sztuki, jak i zwykłych odbiorców. Każde z dzieł odzwierciedla dążenie artysty do perfekcji oraz jego niezwykłe zdolności w operowaniu światłem i kolorem.</p>
+    <p>Strona powstała również z myślą o edukacji i popularyzacji polskiej sztuki XIX wieku. Pragniemy, aby każdy mógł odkryć piękno obrazów Gierymskiego, poznać jego inspiracje oraz zrozumieć, jak wielki wpływ miał na kolejne pokolenia malarzy. Mamy nadzieję, że znajdziesz tutaj inspirację oraz zachętę do dalszego zgłębiania świata sztuki!</p>
+  </div>
+
+  <!-- Banner -->
+  <div class="banner">
+    <div class="container">
+      <h1 class="display-4">Aleksander Gierymski</h1>
+      <p class="lead">Malarz i artysta - portfolio</p>
+      <a href="omnie.html" class="btn btn-primary btn-lg">Poznaj więcej</a>
+    </div>
+  </div>
+
+  <!-- Stopka -->
+  <footer>
+    <div class="container">
+      <p>Łukasz Rosiński DSW52779, prawa autorskie zastrzeżone &copy; 2025.</p>
+    </div>
+  </footer>
+
+  <!-- Skrypty -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>

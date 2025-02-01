@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio - Aleksander Gierymski</title>
+  <link rel="icon" href="img/ikona.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+    .gallery-img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 5px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery-img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .gallery-caption {
+      text-align: center;
+      font-weight: bold;
+      padding: 5px;
+      font-size: 16px;
+      color: #333;
+    }
+
+    footer {
+      background-color: #f8f9fa;
+      padding: 20px 0;
+      text-align: center;
+      position: relative;
+      width: 100%;
+    }
+
+    /* Responsywność dla urządzeń mobilnych */
+    @media (max-width: 767px) {
+      .gallery-img {
+        height: 250px; /* Zmniejszenie wysokości obrazków na mniejszych ekranach */
+      }
+
+      .container {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+
+      .navbar-brand img {
+        width: 25px;
+        height: 25px; /* Zmniejszenie ikony na urządzeniach mobilnych */
+      }
+
+      .navbar-nav {
+        text-align: center;
+      }
+
+      .navbar-toggler {
+        border-color: #007bff;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Nawigacja -->
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">
+      <img src="img/ikona.ico" width="30" height="30" class="d-inline-block align-top" alt=""> Gierymski
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarMenu">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Strona główna</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="omnie.html">O mnie</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="portfoli.html">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="kontakt.html">Kontakt</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Galeria -->
+  <div class="container my-5">
+    <h1 class="text-center mb-4">Galeria prac</h1>
+    <div class="row">
+
+      <div class="col-md-4 gallery-item mb-4">
+        <figure>
+          <img src="img/obraz1.png" class="gallery-img" alt="Pomarańczarka">
+          <figcaption class="gallery-caption">Pomarańczarka (1881)</figcaption>
+        </figure>
+      </div>
+
+      <div class="col-md-4 gallery-item mb-4">
+        <figure>
+          <img src="img/obraz2.jpg" class="gallery-img" alt="Żydówka z cytrynami">
+          <figcaption class="gallery-caption">Żydówka z cytrynami (1881)</figcaption>
+        </figure>
+      </div>
+
+      <div class="col-md-4 gallery-item mb-4">
+        <figure>
+          <img src="img/obraz3.jpg" class="gallery-img" alt="Wieczór nad Sekwaną">
+          <figcaption class="gallery-caption">Wieczór nad Sekwaną (1893)</figcaption>
+        </figure>
+      </div>
+
+      <div class="col-md-4 gallery-item mb-4">
+        <figure>
+          <img src="img/obraz4.jpg" class="gallery-img" alt="Plac Wittelsbachów w Monachium">
+          <figcaption class="gallery-caption">Plac Wittelsbachów w Monachium (1875)</figcaption>
+        </figure>
+      </div>
+
+      <div class="col-md-4 gallery-item mb-4">
+        <figure>
+          <img src="img/obraz5.jpg" class="gallery-img" alt="Trumna chłopska">
+          <figcaption class="gallery-caption">Trumna chłopska (1895)</figcaption>
+        </figure>
+      </div>
+
+      <div class="col-md-4 gallery-item mb-4">
+        <figure>
+          <img src="img/obraz6.jpg" class="gallery-img" alt="W altanie">
+          <figcaption class="gallery-caption">W altanie (1882)</figcaption>
+        </figure>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Stopka -->
+  <footer>
+    <div class="container">
+      <p>Łukasz Rosiński DSW52779, prawa autorskie zastrzeżone &copy; 2025.</p>
+    </div>
+  </footer>
+
+  <!-- Skrypty Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>
